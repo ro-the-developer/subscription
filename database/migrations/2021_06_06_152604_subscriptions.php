@@ -21,6 +21,8 @@ class Subscriptions extends Migration
                 ->references('id')
                 ->on('topics');
             $table->timestamps();
+            $table->unique(['topic_id','email']);
+            $table->index(['email','topic_id']);
         });
     }
 
