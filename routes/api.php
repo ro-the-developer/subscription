@@ -20,5 +20,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::group(['prefix' => 'v1/'], function()
 {
     Route::post('subscribe/{topic}/{email}',SubscribeController::class.'@subscribe')->name('subscribe');
+    Route::delete('subscribe/{topic}/{email}',SubscribeController::class.'@unsubscribe')->name('unsubscribe');
 });
 
