@@ -66,6 +66,37 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Unsubscribe All",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8000/api/v1/subscribe/1/foo@example.com",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"subscribe",
+						"1",
+						"foo@example.com"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
