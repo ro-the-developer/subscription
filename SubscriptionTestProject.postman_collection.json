@@ -79,7 +79,7 @@
 					}
 				],
 				"url": {
-					"raw": "127.0.0.1:8000/api/v1/subscribe/1/foo@example.com",
+					"raw": "127.0.0.1:8000/api/v1/subscribe/all/foo@example.com",
 					"host": [
 						"127",
 						"0",
@@ -91,7 +91,7 @@
 						"api",
 						"v1",
 						"subscribe",
-						"1",
+						"all",
 						"foo@example.com"
 					]
 				}
