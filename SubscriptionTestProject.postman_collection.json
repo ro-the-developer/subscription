@@ -97,6 +97,130 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "List by Email",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8000/api/v1/subscriptions/email/foo@example.com",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"subscriptions",
+						"email",
+						"foo@example.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List by Email non-existent",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8000/api/v1/subscriptions/email/nonexistent@example.com",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"subscriptions",
+						"email",
+						"nonexistent@example.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List by Topic",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8000/api/v1/subscriptions/topic/1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"subscriptions",
+						"topic",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List by Topic non-existent",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8000/api/v1/subscriptions/topic/5",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"subscriptions",
+						"topic",
+						"5"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

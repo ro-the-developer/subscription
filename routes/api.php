@@ -22,5 +22,8 @@ Route::group(['prefix' => 'v1/'], function()
     Route::post('subscribe/{topic}/{email}',SubscribeController::class.'@subscribe')->name('subscribe');
     Route::delete('subscribe/all/{email}',SubscribeController::class.'@unsubscribeAll')->name('unsubscribe.all');
     Route::delete('subscribe/{topic}/{email}',SubscribeController::class.'@unsubscribe')->name('unsubscribe');
+
+    Route::get('subscriptions/email/{email}',SubscribeController::class.'@listByEmail')->name('list.by.email');
+    Route::get('subscriptions/topic/{topic}',SubscribeController::class.'@listByTopic')->name('list.by.topic');
 });
 
