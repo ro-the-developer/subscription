@@ -99,6 +99,45 @@
 			"response": []
 		},
 		{
+			"name": "Get Token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"email11@example.com\",\r\n    \"password\": \"fC4h87_d5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/v1/auth/gettoken",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"gettoken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "List by Email Unauthorized",
 			"request": {
 				"method": "GET",
